@@ -2,22 +2,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-}
-
-.container-fluid {
-    padding: 3% 15%;
-}
-
-h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
 /* Navigation Bar */
 
 .navbar {
@@ -43,12 +27,31 @@ h1 {
     margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
 /* Title image */
 
 .title-image {
     width: 60%;
     transform: rotate(25deg);
-    margin-left: 70px;
+    right: 30%;
+    position: absolute;
 }
 
 /* Features section */
@@ -56,6 +59,8 @@ h1 {
 #features {
     text-align: center;
     padding: 7% 15%;
+    position: relative;
+    background-color: #fff;
 }
 
 .feature-box {
@@ -133,4 +138,51 @@ h1 {
 .pricing-name {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
+}
+
+/* CTA */
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    padding: 7% 15%;
+}
+
+.cta-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 3% 5% 5%;
+}
+
+.cta-button {
+    margin: 0 1.4%;
+}
+
+/* Media Query Breakpoint */
+
+@media (max-width: 1200px) {
+
+    #title {
+        text-align: left;
+    }
+    
+    .title-image {
+        transform: rotate(0);
+        position: static;
+        margin-left: 95px;
+    }
+    
+}
+
+@media (max-width: 991px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        margin-left: 0;
+    }
 }
